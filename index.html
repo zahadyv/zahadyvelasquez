@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhD Zahady D Velásquez | Research & Publications</title>
+  <style>
+    :root {
+      --primary: #0066cc;
+      --primary-hover: #0052a3;
+      --primary-light: #e6f2ff;
+      --box-bg: #eef6ff;
+      --page-bg: #eef4fa;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --muted: #475569;
+      --border: #d0e1f5;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif; margin: 0; color: var(--text); line-height: 1.65; background-color: #ffffff; }
+    nav { background: #ffffff; border-bottom: 1px solid var(--border); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-weight: 700; color: var(--primary); font-size: 1.1rem; text-decoration: none; }
+    .nav-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    .nav-links a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.92rem; }
+    .nav-links a:hover { color: var(--accent); }
+    .hero { position: relative; background: linear-gradient(rgba(17, 24, 39, 0.25), rgba(17, 24, 39, 0.40)), url('hero.jpg') center/cover no-repeat; background-color: var(--dark-bg); color: #ffffff; padding: 105px 5% 95px; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); }
+    .hero-inner { max-width: 1050px; margin: 0 auto; }
+    .hero-tag { display: inline-block; background: rgba(0, 119, 182, 0.9); padding: 5px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 14px; text-shadow: none; }
+    .hero h1 { font-size: 2.6rem; margin: 0 0 12px 0; line-height: 1.15; }
+    .hero p { font-size: 1.15rem; max-width: 720px; color: #f9fafb; margin: 0; }
+    .profile-bar { background: var(--light-bg); border-bottom: 1px solid var(--border); padding: 16px 5%; }
+    .profile-bar-inner { max-width: 1050px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .profile-bar a { background: #ffffff; color: var(--primary); border: 1px solid #cbd5e1; padding: 7px 16px; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; }
+    .profile-bar a:hover { background: var(--primary); color: #ffffff; border-color: var(--primary); }
+    .container { max-width: 1050px; margin: 0 auto; padding: 55px 5%; }
+    section { margin-bottom: 65px; }
+    h2 { font-size: 1.75rem; color: var(--primary); margin: 0 0 10px 0; border-left: 4px solid var(--accent); padding-left: 14px; }
+    .section-subtitle { color: var(--muted); margin: 0 0 26px 18px; font-size: 0.98rem; }
+    .about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 36px; align-items: start; margin-top: 24px; }
+    .profile-pic { width: 220px; height: 220px; object-fit: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); background-color: #e5e7eb; }
+    @media (max-width: 700px) { .about-grid { grid-template-columns: 1fr; } .profile-pic { width: 160px; height: 160px; } }
+    .research-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
+    .research-card { background: var(--light-bg); border: 2px solid var(--border); border-radius: 10px; padding: 24px; transition: all 0.25s ease; }
+    .research-card:hover { border-color: var(--accent); box-shadow: 0 10px 20px rgba(0,0,0,0.06); }
+    .research-card h3 { color: var(--primary); margin: 0 0 10px 0; font-size: 1.15rem; }
+    .research-card p { margin: 0 0 14px 0; color: var(--muted); font-size: 0.95rem; }
+    .toggle-badge { display: inline-block; font-size: 0.85rem; font-weight: 700; color: var(--accent); }
+    .pub-list { list-style: none; padding: 0; margin: 0; }
+    .pub-list li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.92rem; }
+    .pub-list li:last-child { border-bottom: none; }
+    .pub-list a { color: var(--accent); font-weight: 600; text-decoration: none; margin-left: 6px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .tag { background: #eef4fb; color: var(--primary); padding: 6px 14px; border-radius: 999px; font-size: 0.88rem; font-weight: 600; }
+    footer { background: var(--dark-bg); color: #d1d5db; padding: 30px 5%; font-size: 0.9rem; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <  <nav>
+    <a href="#" class="nav-brand">PhD Zahady D Velásquez</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#latest-paper">Latest Paper</a>
+      <a href="#research">Research</a>
+      <a href="#team">Team</a>
+      <a href="#positions">Open Positions</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Institut für Parasitologie &bull; JLU Giessen</span>
+      <h1>PhD Zahady D Velásquez</h1>
+      <p>Cell and molecular biologist investigating host–pathogen interactions, host cell cycle modulation, and innate immunity in apicomplexan infections.</p>
+    </div>
+  </header>
+
+  <div class="profile-bar">
+    <div class="profile-bar-inner">
+      <a href="mailto:zahady.velasquez@vetmed.uni-giessen.de">Email</a>
+      <a href="https://orcid.org/0000-0002-1360-2209" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://www.researchgate.net/profile/Zahady-Velasquez?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a>
+      <a href="https://www.linkedin.com/in/zahady-d-velasquez-98531041/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+
+  <main class="container">
+
+
+       <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <img src="profile.jpg" alt="PhD Zahady D Velásquez" class="profile-pic">
+        <div>
+          <p>I am a Researcher at the <strong>Institute of Parasitology</strong>, <strong>Justus Liebig University Giessen (JLU)</strong>, Germany. Holding a PhD in Cell and Molecular Biology, my work focuses on uncovering the cellular and molecular mechanisms through which intracellular apicomplexan parasites—such as <em>Toxoplasma gondii</em>, <em>Cryptosporidium parvum</em>, <em>Besnoitia besnoiti</em>, and <em>Eimeria bovis</em>—subvert host cell functions.</p>
+          <p>Using advanced live-cell holotomographic microscopy, immunofluorescence, and physiological oxygen (physioxia) models, I study how parasites manipulate host cell division, metabolic pathways, and neutrophil extracellular trap (NET) formation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Publication (Justo debajo de About Me) -->
+    <section id="latest-paper">
+      <h2>Latest Publication</h2>
+      <div style="background: #eef6fc; border-left: 5px solid #004a99; border-radius: 8px; padding: 24px 28px; margin-top: 20px;">
+        <span style="display: inline-block; background: #004a99; color: #ffffff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; text-transform: uppercase; margin-bottom: 10px;">New Paper &bull; 2025</span>
+        <h3 style="margin: 0 0 8px 0; color: #1f2937; font-size: 1.2rem;">Adverse impact of acute <em>Toxoplasma gondii</em> infection on host cell cycle and genome integrity</h3>
+        <p style="margin: 0 0 10px 0; color: #4b5563; font-size: 0.95rem;">Rojas-Barón L, Hermosilla C, Taubert A, <strong>Velásquez ZD</strong> &bull; <em>The FEBS Journal</em></p>
+        <p style="margin: 0 0 14px 0; color: #374151; font-size: 0.95rem;">This study demonstrates how acute <em>T. gondii</em> infection disrupts host cell cycle progression and compromises host genomic stability during intracellular replication.</p>
+        <a href="https://febs.onlinelibrary.wiley.com/doi/10.1111/febs.70097" target="_blank" rel="noopener" style="display: inline-block; background: #0077b6; color: #ffffff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Read Full Article (DOI) &rarr;</a>
+</div>
+
+    <section id="press-release">
+      <h2>Press Release</h2>
+      <div style="background: #eef6fc; border-left: 5px solid #004a99; border-radius: 8px; padding: 24px 28px; margin-top: 20px;">
+        <span style="display: inline-block; background: #004a99; color: #ffffff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; text-transform: uppercase; margin-bottom: 10px;">New Paper &bull; 2025</span>
+        <img src="press.jpg" alt="Press coverage">
+        <div class="press-content">
+          <h3>Research Highlighted in the Media</h3>
+          <p>Media coverage featuring our recent study on acute <em>Toxoplasma gondii</em> infection.</p>
+          <a href="https://www.telegraph.co.uk/global-health/science-and-disease/could-the-answer-to-the-male-fertility-crisis-be-cat-litter/" target="_blank" rel="noopener" class="btn-primary">Read Press Article &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Key Research Areas con Desplegables Nativos -->
+    <section id="research">
+      <h2>Key Research Areas</h2>
+      <p class="section-subtitle">Click on any research area below to expand its peer-reviewed publications.</p>
+
+      <div class="research-grid">
+        <details class="research-card" open>
+          <summary style="cursor:pointer; list-style:none;">
+            <h3>Host Cell Cycle &amp; Genome Stability</h3>
+            <p>Dissecting how intracellular parasites arrest or dysregulate host mitosis, cytokinesis, and DNA damage responses.</p>
+            <span class="toggle-badge">Click to view/hide publications &darr;</span>
+          </summary>
+          <ul class="pub-list" style="margin-top:16px; border-top:1px solid #cbd5e1; padding-top:12px;">
+            <li>Rojas-Barón L, Hermosilla C, Taubert A, <strong>Velásquez ZD</strong> (2025). Adverse impact of acute <em>Toxoplasma gondii</em> infection on host cell cycle and genome integrity. <em>The FEBS Journal</em>. <a href="https://doi.org" target="_blank">[DOI]</a></li>
+            <li>Rojas-Barón L, Hermosilla C, Taubert A, <strong>Velásquez ZD</strong> (2024). <em>Toxoplasma gondii</em> modulates the host cell cycle, chromosome segregation, and cytokinesis. <em>Parasites &amp; Vectors</em>, 17, 173. <a href="https://doi.org" target="_blank">[DOI]</a></li>
+            <li><strong>Velásquez ZD</strong> et al. (2021). <em>Eimeria bovis</em> infections induce G1 cell cycle arrest in endothelial host cells. <em>Parasitology</em>, 148(3), 341–353. <a href="https://doi.org" target="_blank">[DOI]</a></li>
+            <li><strong>Velásquez ZD</strong> et al. (2019). <em>Toxoplasma gondii</em>-induced host cellular cell cycle dysregulation. <em>Scientific Reports</em>, 9(1), 12496. <a href="https://doi.org" target="_blank">[DOI]</a></li>
+          </ul>
+        </details>
+
+        <details class="research-card">
+          <summary style="cursor:pointer; list-style:none;">
+            <h3>Innate Immunity &amp; NETosis</h3>
+            <p>Investigating neutrophil extracellular trap (NET) extrusion, purinergic signaling, and immune evasion under physioxia.</p>
+            <span class="toggle-badge">Click to view/hide publications &darr;</span>
+          </summary>
+          <ul class="pub-list" style="margin-top:16px; border-top:1px solid #cbd5e1; padding-top:12px;">
+            <li>Conejeros I, <strong>Velásquez ZD</strong> et al. (2022). Glycolysis, monocarboxylate transport, and purinergic signaling in <em>Eimeria bovis</em>-induced NETosis. <em>Frontiers in Immunology</em>, 13, 842482. <a href="https://doi.org" target="_blank">[DOI]</a></li>
+            <li>Hasheminasab SS, Conejeros I, <strong>Velásquez ZD</strong> et al. (2022). ATP Purinergic Receptor P2X1-Dependent Suicidal NETosis by <em>Cryptosporidium parvum</em>. <em>Biology</em>, 11(3), 442. <a href="https://doi.org" target="_blank">[DOI]</a></li>
+          </ul>
+        </details>
+
+        <details class="research-card">
+          <summary style="cursor:pointer; list-style:none;">
+            <h3>Host–Parasite Metabolism</h3>
+            <p>Mapping metabolic reprogramming and bystander cell communication during apicomplexan development.</p>
+            <span class="toggle-badge">Click to view/hide publications &darr;</span>
+          </summary>
+          <ul class="pub-list" style="margin-top:16px; border-top:1px solid #cbd5e1; padding-top:12px;">
+            <li><strong>Velásquez ZD</strong> et al. (2022). <em>Besnoitia besnoiti</em>-induced alterations in host cell metabolism and lipid droplet formation. <em>Parasitology Research</em>. <a href="https://orcid.org/0000-0002-1360-2209" target="_blank">[ORCID]</a></li>
+            <li>View complete list on <a href="https://google.com" target="_blank">Google Scholar</a> or <a href="https://orcid.org/0000-0002-1360-2209" target="_blank">ORCID</a>.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- Background & Expertise -->
+    <section id="background">
+      <h2>Background &amp; Methodological Expertise</h2>
+      <p><strong>Researcher:</strong> Justus Liebig University Giessen (Germany) &amp; Universidad Austral de Chile (FONDECYT Postdoctoral Grant).<br>
+      <strong>Education:</strong> PhD in Cell and Molecular Biology (Marcelino Botín Foundation &amp; CONICYT Fellowships).</p>
+      <div class="tags">
+        <span class="tag">3D Holotomographic Live-Cell Imaging</span>
+        <span class="tag">Immunofluorescence Microscopy</span>
+        <span class="tag">Physioxia Cell Models</span>
+        <span class="tag">Flow Cytometry</span>
+        <span class="tag">Western Blot</span>
+        <span class="tag">Molecular Cloning &amp; PCR</span>
+      </div>
+    </section>
+
+    <!-- Team Members -->
+    <section id="team">
+      <h2>Team Members</h2>
+      <p class="section-subtitle">Current researchers, doctoral candidates, and students in our group at JLU Giessen.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+        
+        <!-- 1. Project Leader -->
+        <div style="background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; text-align: center;">
+          <img src="profile.jpg" alt="PhD Zahady D Velásquez" style="width: 95px; height: 95px; object-fit: cover; border-radius: 50%; margin-bottom: 12px; border: 2px solid #004a99;">
+          <h3 style="margin: 0 0 4px 0; color: #004a99; font-size: 1.1rem;">PhD Zahady D Velásquez</h3>
+          <p style="margin: 0 0 8px 0; font-weight: 600; font-size: 0.9rem; color: #374151;">Project Leader / Researcher</p>
+          <p style="margin: 0; font-size: 0.88rem; color: #4b5563;">Host cell cycle, genome integrity, and apicomplexan host–pathogen interactions.</p>
+        </div>
+
+        <!-- 2. PhD Candidate -->
+        <div style="background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; text-align: center;">
+          <img src="phd1.jpg" alt="Honorine Mireille Nguele Ampama" style="width: 95px; height: 95px; object-fit: cover; border-radius: 50%; margin-bottom: 12px; border: 2px solid #004a99;">
+          <h3 style="margin: 0 0 4px 0; color: #004a99; font-size: 1.1rem;">Honorine Mireille Nguele Ampama</h3>
+          <p style="margin: 0 0 8px 0; font-weight: 600; font-size: 0.9rem; color: #374151;">Dr Candidate (Dr. med. vet. / Dr. rer. nat.)</p>
+          <p style="margin: 0; font-size: 0.88rem; color: #4b5563;">Research focus: In vitro inhibition of Cryptosporidium parvum infection by the olive oil polyphenol oleocanthal and insights into the prevalence of cryptosporidiosis in
+children in Cameroon.</p>
+        </div>
+
+        <!-- 3. Student / Visiting Researcher -->
+        <div style="background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; text-align: center;">
+          <img src="msc1.jpg" alt="Visitors" style="width: 95px; height: 95px; object-fit: cover; border-radius: 50%; margin-bottom: 12px; border: 2px solid #004a99;">
+          <h3 style="margin: 0 0 4px 0; color: #004a99; font-size: 1.1rem;">Name of visitor</h3>
+          <p style="margin: 0 0 8px 0; font-weight: 600; font-size: 0.9rem; color: #374151;">M.Sc. / Veterinary Thesis Student</p>
+          <p style="margin: 0; font-size: 0.88rem; color: #4b5563;">Research focus: Topic of research.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Open Positions -->
+    <section id="positions">
+      <h2>Open Positions</h2>
+      <p class="section-subtitle">Opportunities to join our research group at the Institute of Parasitology, JLU Giessen.</p>
+      
+      <div style="background: #ffffff; border: 1px solid #cbd5e1; border-top: 4px solid #0077b6; border-radius: 10px; padding: 24px 28px; margin-bottom: 18px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+          <h3 style="margin: 0; color: #004a99; font-size: 1.15rem;">M.Sc. / Dr. med. vet. Thesis Projects (Ongoing)</h3>
+          <span style="background: #dcfce7; color: #166534; font-size: 0.82rem; font-weight: 700; padding: 4px 10px; border-radius: 999px;">Accepting Inquiries</span>
+        </div>
+        <p style="margin: 0 0 14px 0; color: #374151; font-size: 0.95rem;">We welcome motivated Veterinary Medicine, Biology, and Biomedicine students interested in live-cell microscopy, cell cycle regulation, or host–parasite metabolism. Please send a short statement of interest and your CV.</p>
+        <a href="mailto:zahady.velasquez@vetmed.uni-giessen.de?subject=Thesis%20Inquiry%20-%20Velasquez%20Lab" style="color: #0077b6; font-weight: 600; text-decoration: none; font-size: 0.93rem;">Apply via Email &rarr;</a>
+      </div>
+
+      <div style="background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px 28px;">
+        <h3 style="margin: 0 0 8px 0; color: #1f2937; font-size: 1.08rem;">Postdoctoral &amp; Doctoral Fellowships</h3>
+        <p style="margin: 0; color: #4b5563; font-size: 0.94rem;">Candidates interested in applying for external fellowships (e.g., DAAD, Alexander von Humboldt, DFG, or MSCA) to work on apicomplexan cell biology are encouraged to contact Dr. Velásquez directly with their CV and research ideas.</p>
+      </div>
+    </section>
+
+    <!-- Sección Contact al final de la página -->
+    <section id="contact" style="margin-bottom: 20px;">
+      <h2>Contact</h2>
+      <div style="background: #f8fafc; border: 1px solid #e5e7eb; border-left: 4px solid #004a99; border-radius: 8px; padding: 24px 28px; margin-top: 20px;">
+        <p style="line-height: 1.8; margin: 0; color: #1f2937; font-size: 1rem;">
+          <strong>PhD Zahady D Velásquez</strong><br>
+          Institut für Parasitologie<br>
+          Justus-Liebig-Universität Giessen<br>
+          Schubertstr. 81<br>
+          35392 Giessen<br><br>
+          <strong>Tel.</strong> <a href="tel:+496419938478" style="color: #0077b6; text-decoration: none; font-weight: 600;">+49-641-9938478</a><br>
+          <strong>Email:</strong> <a href="mailto:zahady.velasquez@vetmed.uni-giessen.de" style="color: #0077b6; text-decoration: none; font-weight: 600;">zahady.velasquez@vetmed.uni-giessen.de</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 PhD Zahady D Velásquez &bull; Institut für Parasitologie, Justus-Liebig-Universität Giessen
+  </footer>
+
+</body>
+</html>
