@@ -53,6 +53,57 @@
     .tag { background: #eef4fb; color: var(--primary); padding: 6px 14px; border-radius: 999px; font-size: 0.88rem; font-weight: 600; }
     footer { background: var(--dark-bg); color: #d1d5db; padding: 30px 5%; font-size: 0.9rem; text-align: center; }
   </style>
+  /* Ajustes para pantallas de teléfono móvil */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  /* Evita que cualquier imagen o caja se salga de la pantalla */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Apila el menú superior y los botones de perfil */
+  nav, .navbar, .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 14px;
+    padding: 12px 16px;
+  }
+
+  /* Convierte cualquier diseño de 2 o 3 columnas en 1 sola columna */
+  .container, .about-grid, .grid, .research-grid, .team-grid, .cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  /* Centra la foto de perfil en móvil */
+  .profile-pic, .about-img {
+    margin: 0 auto 16px auto;
+    display: block;
+    max-width: 160px;
+  }
+
+  /* Ajusta el tamaño de los títulos principales */
+  h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+  section, header, footer {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
+
 </head>
 <body>
 
