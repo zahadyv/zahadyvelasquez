@@ -273,51 +273,133 @@
     </section>
 
     
-    <!-- Key Research Areas con Desplegables Nativos -->
-    <section id="research">
-      <h2>Key Research Areas</h2>
-      <p class="section-subtitle">Click on any research area below to expand its peer-reviewed publications.</p>
+   <section class="pub-section-wrapper" id="publications">
+  
+  <!-- Filtros rápidos por área -->
+  <div class="pub-filter-bar" role="tablist">
+    <button class="pub-filter-btn active" onclick="filterAreas('all', this)">All Areas (37)</button>
+    <button class="pub-filter-btn" onclick="filterAreas('cell-cycle', this)">Cell Cycle & Genome Stability (8)</button>
+    <button class="pub-filter-btn" onclick="filterAreas('immunity', this)">Innate Immunity & NETosis (11)</button>
+    <button class="pub-filter-btn" onclick="filterAreas('metabolism', this)">Host–Parasite Metabolism & Biology (13)</button>
+    <button class="pub-filter-btn" onclick="filterAreas('neuro', this)">Neurobiology & Cell Physiology (5)</button>
+  </div>
 
-      <div class="research-grid">
-        <details class="research-card" open>
-          <summary style="cursor:pointer; list-style:none;">
-            <h3>Host Cell Cycle &amp; Genome Stability</h3>
-            <p>Dissecting how intracellular parasites arrest or dysregulate host mitosis, cytokinesis, and DNA damage responses.</p>
-            <span class="toggle-badge">Click to view/hide publications &darr;</span>
-          </summary>
-          <ul class="pub-list" style="margin-top:16px; border-top:1px solid #cbd5e1; padding-top:12px;">
-            <li>Rojas-Barón L, Hermosilla C, Taubert A, <strong>Velásquez ZD</strong> (2025). Adverse impact of acute <em>Toxoplasma gondii</em> infection on host cell cycle and genome integrity. <em>The FEBS Journal</em>. <a href="https://doi.org" target="_blank">[DOI]</a></li>
-            <li>Rojas-Barón L, Hermosilla C, Taubert A, <strong>Velásquez ZD</strong> (2024). <em>Toxoplasma gondii</em> modulates the host cell cycle, chromosome segregation, and cytokinesis. <em>Parasites &amp; Vectors</em>, 17, 173. <a href="https://doi.org" target="_blank">[DOI]</a></li>
-            <li><strong>Velásquez ZD</strong> et al. (2021). <em>Eimeria bovis</em> infections induce G1 cell cycle arrest in endothelial host cells. <em>Parasitology</em>, 148(3), 341–353. <a href="https://doi.org" target="_blank">[DOI]</a></li>
-            <li><strong>Velásquez ZD</strong> et al. (2019). <em>Toxoplasma gondii</em>-induced host cellular cell cycle dysregulation. <em>Scientific Reports</em>, 9(1), 12496. <a href="https://doi.org" target="_blank">[DOI]</a></li>
-          </ul>
-        </details>
+  <!-- ÁREA 1: HOST CELL CYCLE & GENOME STABILITY -->
+  <div class="pub-area-block" data-area="cell-cycle">
+    <div class="pub-area-header">
+      <h3 class="pub-area-title">Host Cell Cycle & Genome Stability</h3>
+      <span class="pub-area-count">8 publications</span>
+    </div>
 
-        <details class="research-card">
-          <summary style="cursor:pointer; list-style:none;">
-            <h3>Innate Immunity &amp; NETosis</h3>
-            <p>Investigating neutrophil extracellular trap (NET) extrusion, purinergic signaling, and immune evasion under physioxia.</p>
-            <span class="toggle-badge">Click to view/hide publications &darr;</span>
-          </summary>
-          <ul class="pub-list" style="margin-top:16px; border-top:1px solid #cbd5e1; padding-top:12px;">
-            <li>Conejeros I, <strong>Velásquez ZD</strong> et al. (2022). Glycolysis, monocarboxylate transport, and purinergic signaling in <em>Eimeria bovis</em>-induced NETosis. <em>Frontiers in Immunology</em>, 13, 842482. <a href="https://doi.org" target="_blank">[DOI]</a></li>
-            <li>Hasheminasab SS, Conejeros I, <strong>Velásquez ZD</strong> et al. (2022). ATP Purinergic Receptor P2X1-Dependent Suicidal NETosis by <em>Cryptosporidium parvum</em>. <em>Biology</em>, 11(3), 442. <a href="https://doi.org" target="_blank">[DOI]</a></li>
-          </ul>
-        </details>
+    <div class="pub-list">
+      <article class="pub-card">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2025</span><span class="pub-journal">The FEBS Journal</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title">Adverse impact of acute <em>Toxoplasma gondii</em> infection on human spermatozoa</a>
+          <div class="pub-authors">Rojas-Barón L, Tana-Hernandez L, Nguele Ampama MH, Sanchéz R, Gärtner U, Wagenlehner FME, Preußer C, Pogge von Strandmann E, Hermosilla C, Taubert A, Francia ME, <strong>Velasquez ZD</strong></div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
 
-        <details class="research-card">
-          <summary style="cursor:pointer; list-style:none;">
-            <h3>Host–Parasite Metabolism</h3>
-            <p>Mapping metabolic reprogramming and bystander cell communication during apicomplexan development.</p>
-            <span class="toggle-badge">Click to view/hide publications &darr;</span>
-          </summary>
-          <ul class="pub-list" style="margin-top:16px; border-top:1px solid #cbd5e1; padding-top:12px;">
-            <li><strong>Velásquez ZD</strong> et al. (2022). <em>Besnoitia besnoiti</em>-induced alterations in host cell metabolism and lipid droplet formation. <em>Parasitology Research</em>. <a href="https://orcid.org/0000-0002-1360-2209" target="_blank">[ORCID]</a></li>
-            <li>View complete list on <a href="https://google.com" target="_blank">Google Scholar</a> or <a href="https://orcid.org/0000-0002-1360-2209" target="_blank">ORCID</a>.</li>
-          </ul>
-        </details>
-      </div>
-    </section>
+      <article class="pub-card">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2024</span><span class="pub-journal">Communications Biology</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title"><em>Toxoplasma gondii</em> infection induces early host cell cycle arrest and DNA damage in primary human host cells by a MYR1-dependent mechanism</a>
+          <div class="pub-authors"><strong>Velásquez ZD</strong>, Rojas-Baron L, Conejeros I, Hermosilla C, Taubert A</div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+
+      <article class="pub-card">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2024</span><span class="pub-journal">Parasites & Vectors</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title"><em>Toxoplasma gondii</em> modulates the host cell cycle, chromosome segregation, and cytokinesis irrespective of cell type or species origin</a>
+          <div class="pub-authors">Rojas-Baron L, Senk K, Hermosilla C, Taubert A, <strong>Velásquez ZD</strong></div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+
+      <!-- Ocultos inicialmente en móvil/PC hasta pulsar "Show all" -->
+      <article class="pub-card hidden-item">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2024</span><span class="pub-journal">Frontiers in Cellular and Infection Microbiology</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title"><em>Toxoplasma gondii</em> infection-induced host cellular DNA damage is strain-dependent and leads to the activation of the ATM-dependent homologous recombination pathway</a>
+          <div class="pub-authors">Rojas-Barón L, Hermosilla C, Taubert A, <strong>Velásquez ZD</strong></div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+
+      <article class="pub-card hidden-item">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2024</span><span class="pub-journal">Frontiers in Microbiology</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title"><em>Toxoplasma gondii</em> Me49 and NED strains arrest host cell cycle progression and alter chromosome segregation in a strain-independent manner</a>
+          <div class="pub-authors">Rojas-Barón L, Hermosilla C, Taubert A, <strong>Velásquez ZD</strong></div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+
+      <article class="pub-card hidden-item">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2022</span><span class="pub-journal">Frontiers in Cell and Developmental Biology</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title"><em>Neospora caninum</em> Infection Triggers S-phase Arrest and Alters Nuclear Characteristics in Primary Bovine Endothelial Host Cells</a>
+          <div class="pub-authors"><strong>Velásquez ZD</strong>, Rojas-Barón L, Larrazabal C, Salierno M, Gärtner U, Pervizaj-Oruqaj L, Herold S, Hermosilla C, Taubert A</div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+
+      <article class="pub-card hidden-item">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2021</span><span class="pub-journal">Parasitology</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title"><em>Eimeria bovis</em> infections induce G<sub>1</sub> cell cycle arrest and a senescence-like phenotype in endothelial host cells</a>
+          <div class="pub-authors"><strong>Velásquez ZD</strong>, López-Osorio S, Waiger D, Manosalva C, Pervizaj-Oruqaj L, Herold S, Hermosilla C, Taubert A</div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+
+      <article class="pub-card hidden-item">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2020</span><span class="pub-journal">Parasitology Research</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title"><em>Besnoitia besnoiti</em>-driven endothelial host cell cycle alteration</a>
+          <div class="pub-authors"><strong>Velásquez ZD</strong>, Lopez-Osorio S, Pervizaj-Oruqaj L, Herold S, Hermosilla C, Taubert A</div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+
+      <article class="pub-card hidden-item">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2019</span><span class="pub-journal">Scientific Reports</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title"><em>Toxoplasma gondii</em>-induced host cellular cell cycle dysregulation is linked to chromosome missegregation and cytokinesis failure in primary endothelial host cells</a>
+          <div class="pub-authors"><strong>Velásquez ZD</strong>, Conejeros I, Larrazabal C, Kerner K, Hermosilla C, Taubert A</div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+    </div>
+    <button class="pub-toggle-more" onclick="toggleMore(this)">Show all 9 publications ↓</button>
+  </div>
+
+  <!-- ÁREA 2: INNATE IMMUNITY & NETOSIS -->
+  <div class="pub-area-block" data-area="immunity">
+    <div class="pub-area-header">
+      <h3 class="pub-area-title">Innate Immunity & NETosis</h3>
+      <span class="pub-area-count">11 publications</span>
+    </div>
+
+    <div class="pub-list">
+      <article class="pub-card">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2026</span><span class="pub-journal">Animals</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title">Haemocyte-Derived Innate Immune Reactions of the Giant African Snail (<em>Lissachatina fulica</em>) Against the Lungworm <em>Angiostrongylus vasorum</em></a>
+          <div class="pub-authors">Dusch A, Conejeros I, <strong>Velásquez ZD</strong>, Hermosilla C, Taubert A</div>
+        </div>
+        <div class="pub-actions"><a href="https://doi.org" target="_blank" rel="noopener" class="pub-doi-btn">DOI ↗</a></div>
+      </article>
+
+      <article class="pub-card">
+        <div class="pub-content">
+          <div class="pub-meta"><span class="pub-year">2025</span><span class="pub-journal">Frontiers in Immunology</span></div>
+          <a href="https://doi.org" target="_blank" rel="noopener" class="pub-title">Early responses of primary human and bovine monocytes, monocytic THP-1 cells and THP-1 cell-derived macrophages to vital <em>Toxoplasma gondii</em> tachyzoites</a>
+          <div class="pub-authors">Hanke D, <strong>Velásquez ZD</strong>, Büttner K, Krueger A, Ross R, Hecker A, Mazurek S, Grau V, Taubert A, Hermosilla C, Richter K, Conejeros I</div>
+
 
     <!-- Background & Expertise -->
     <section id="background">
