@@ -270,7 +270,7 @@
 
        <script>
       document.querySelectorAll('a[data-doi]').forEach(function(link) {
-        link.href = 'https://doi.org' + link.getAttribute('data-doi');
+        link.href = 'https://doi.org/' + link.getAttribute('data-doi');
         link.target = '_blank';
         link.rel = 'noopener';
       });
