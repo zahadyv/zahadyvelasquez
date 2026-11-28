@@ -5,103 +5,199 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PhD Zahady D Velásquez | Research & Publications</title>
   <style>
-    :root {
-      --primary: #0066cc;
-      --primary-hover: #0052a3;
-      --primary-light: #e6f2ff;
-      --box-bg: #eef6ff;
-      --page-bg: #eef4fa;
-      --card-bg: #ffffff;
-      --text: #1e293b;
-      --muted: #475569;
-      --border: #d0e1f5;
-    }
-    * { box-sizing: border-box; }
-    body { font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif; margin: 0; color: var(--text); line-height: 1.65; background-color: #ffffff; }
-    nav { background: #ffffff; border-bottom: 1px solid var(--border); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-    .nav-brand { font-weight: 700; color: var(--primary); font-size: 1.1rem; text-decoration: none; }
-    .nav-links { display: flex; gap: 22px; flex-wrap: wrap; }
-    .nav-links a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.92rem; }
-    .nav-links a:hover { color: var(--accent); }
-    .hero { position: relative; background: linear-gradient(rgba(17, 24, 39, 0.25), rgba(17, 24, 39, 0.40)), url('hero.jpg') center/cover no-repeat; background-color: var(--dark-bg); color: #ffffff; padding: 105px 5% 95px; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); }
-    .hero-inner { max-width: 1050px; margin: 0 auto; }
-    .hero-tag { display: inline-block; background: rgba(0, 119, 182, 0.9); padding: 5px 14px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 14px; text-shadow: none; }
-    .hero h1 { font-size: 2.6rem; margin: 0 0 12px 0; line-height: 1.15; }
-    .hero p { font-size: 1.15rem; max-width: 720px; color: #f9fafb; margin: 0; }
-    .profile-bar { background: var(--light-bg); border-bottom: 1px solid var(--border); padding: 16px 5%; }
-    .profile-bar-inner { max-width: 1050px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-    .profile-bar a { background: #ffffff; color: var(--primary); border: 1px solid #cbd5e1; padding: 7px 16px; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; }
-    .profile-bar a:hover { background: var(--primary); color: #ffffff; border-color: var(--primary); }
-    .container { max-width: 1050px; margin: 0 auto; padding: 55px 5%; }
-    section { margin-bottom: 65px; }
-    h2 { font-size: 1.75rem; color: var(--primary); margin: 0 0 10px 0; border-left: 4px solid var(--accent); padding-left: 14px; }
-    .section-subtitle { color: var(--muted); margin: 0 0 26px 18px; font-size: 0.98rem; }
-    .about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 36px; align-items: start; margin-top: 24px; }
-    .profile-pic { width: 220px; height: 220px; object-fit: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); background-color: #e5e7eb; }
-    @media (max-width: 700px) { .about-grid { grid-template-columns: 1fr; } .profile-pic { width: 160px; height: 160px; } }
-    .research-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
-    .research-card { background: var(--light-bg); border: 2px solid var(--border); border-radius: 10px; padding: 24px; transition: all 0.25s ease; }
-    .research-card:hover { border-color: var(--accent); box-shadow: 0 10px 20px rgba(0,0,0,0.06); }
-    .research-card h3 { color: var(--primary); margin: 0 0 10px 0; font-size: 1.15rem; }
-    .research-card p { margin: 0 0 14px 0; color: var(--muted); font-size: 0.95rem; }
-    .toggle-badge { display: inline-block; font-size: 0.85rem; font-weight: 700; color: var(--accent); }
-    .pub-list { list-style: none; padding: 0; margin: 0; }
-    .pub-list li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.92rem; }
-    .pub-list li:last-child { border-bottom: none; }
-    .pub-list a { color: var(--accent); font-weight: 600; text-decoration: none; margin-left: 6px; }
-    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-    .tag { background: #eef4fb; color: var(--primary); padding: 6px 14px; border-radius: 999px; font-size: 0.88rem; font-weight: 600; }
-    footer { background: var(--dark-bg); color: #d1d5db; padding: 30px 5%; font-size: 0.9rem; text-align: center; }
-    /* Ajustes para pantallas de teléfono móvil */
-  @media (max-width: 768px) {
-    body {
-      padding: 0;
-      font-size: 16px;
-    }
+   /* Contenedor principal de publicaciones */
+.pub-section-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1e293b;
+}
 
-    /* Evita que cualquier imagen o caja se salga de la pantalla */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+/* Barra de filtro rápido (Deslizable en móvil) */
+.pub-filter-bar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+  -webkit-overflow-scrolling: touch;
+}
 
-    /* Apila el menú superior y los botones de perfil */
-    nav, .navbar, .nav-links {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px 14px;
-      padding: 12px 16px;
-    }
+.pub-filter-btn {
+  white-space: nowrap;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 
-    /* Convierte cualquier diseño de 2 o 3 columnas en 1 sola columna */
-    .container, .about-grid, .grid, .research-grid, .team-grid, .cards {
-      display: flex !important;
-      flex-direction: column !important;
-      gap: 20px;
-    }
+.pub-filter-btn:hover {
+  border-color: #0f172a;
+  color: #0f172a;
+}
 
-    /* Centra la foto de perfil en móvil */
-    .profile-pic, .about-img {
-      margin: 0 auto 16px auto;
-      display: block;
-      max-width: 160px;
-    }
+.pub-filter-btn.active {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
 
-    /* Ajusta el tamaño de los títulos principales */
-    h1 {
-      font-size: 1.75rem !important;
-      line-height: 1.25;
-    }
+/* Bloques por área temática */
+.pub-area-block {
+  margin-bottom: 40px;
+}
 
-    h2 {
-      font-size: 1.4rem !important;
-    }
+.pub-area-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 8px;
+}
 
-    section, header, footer {
-      padding-left: 18px !important;
-      padding-right: 18px !important;
-    }
+.pub-area-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.pub-area-count {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Tarjeta individual de publicación */
+.pub-card {
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pub-card.hidden-item {
+  display: none;
+}
+
+.pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.pub-year {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.pub-journal {
+  font-style: italic;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.pub-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #0f172a;
+  margin: 2px 0;
+  text-decoration: none;
+}
+
+.pub-title:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.pub-authors strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.pub-actions {
+  margin-top: 4px;
+}
+
+.pub-doi-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0369a1;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.pub-doi-btn:hover {
+  background: #e0f2fe;
+}
+
+/* Botón para desplegar más artículos en la sección */
+.pub-toggle-more {
+  margin-top: 14px;
+  width: 100%;
+  padding: 10px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pub-toggle-more:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+/* En PC: alineación horizontal para el botón DOI */
+@media (min-width: 768px) {
+  .pub-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
   }
+  .pub-content {
+    flex: 1;
+  }
+  .pub-actions {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+  .pub-toggle-more {
+    width: auto;
+    padding: 8px 20px;
+  }
+}
 
   </style>
 </head>
